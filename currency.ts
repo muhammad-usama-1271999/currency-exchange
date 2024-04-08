@@ -21,7 +21,7 @@ let currency : any = {
     Omani_Riyal___________________OMR : 0.38,
     Bahraini_Dinar________________BHD : 0.37,
     Sri_lankan_Rupee______________LKR : 298.6,
-   Japanese_Yen___________________JPY : 151.6,
+    Japanese_Yen__________________JPY : 151.6,
 
 };
 
@@ -49,7 +49,7 @@ let exchange : any = await inquirer.prompt([
             "Omani_Riyal___________________OMR",
             "Bahraini_Dinar________________BHD",
             "Sri_lankan_Rupee______________LKR",
-            "Japanese_Yen__________________JPY ",
+            "Japanese_Yen__________________JPY",
         ]
     },
     {
@@ -75,7 +75,7 @@ let exchange : any = await inquirer.prompt([
             "Omani_Riyal___________________OMR",
             "Bahraini_Dinar________________BHD",
             "Sri_lankan_Rupee______________LKR",
-            "Japanese_Yen__________________JPY ",
+            "Japanese_Yen__________________JPY",
         ]
     },
     {
