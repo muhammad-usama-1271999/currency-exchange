@@ -95,6 +95,6 @@ let amount : any = exchange.amount;
 
 
 let store : any = amount / givenCurrency ;
-let change : any = Math.floor(store * exchangeCurrency) ;
-
-console.log(change);
+let change : any = store * exchangeCurrency ;
+let changed :any = change.toFixed(2);
+console.log(changed);

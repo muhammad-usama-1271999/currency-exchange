@@ -87,5 +87,6 @@ let amount = exchange.amount;
 // console.log(givenCurrency);
 // console.log(exchangeCurrency);
 let store = amount / givenCurrency;
-let change = Math.floor(store * exchangeCurrency);
-console.log(change);
+let change = store * exchangeCurrency;
+let changed = change.toFixed(2);
+console.log(changed);
