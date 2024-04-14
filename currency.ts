@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
 import inquirer from "inquirer"
+let condition = true;
 
 let currency : any = {
     United_States_Dollar__________USD : 1,
@@ -24,6 +25,8 @@ let currency : any = {
     Japanese_Yen__________________JPY : 151.6,
 
 };
+while(condition){
+
 
 let exchange : any = await inquirer.prompt([
     {
@@ -98,3 +101,19 @@ let store : any = amount / givenCurrency ;
 let change : any = store * exchangeCurrency ;
 let changed :any = change.toFixed(2);
 console.log(changed);
+
+let user = await inquirer.prompt([
+    {
+        name: "choice",
+        type: "list",
+        massage: "select the one of the following option. own your choice exit or again currency exchange.",
+        choices:[ "currency change", "exit"]
+    }
+]);
+if(user.choice == "currency change"){
+    condition = true;
+}else if(user.choice == "exit"){
+    condition = false;
+}
+
+}
